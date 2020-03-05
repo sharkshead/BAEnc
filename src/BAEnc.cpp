@@ -15,7 +15,7 @@ __attribute__ ((noinline)) void BAEncA(const uint8_t *src, int size, const uint8
     for(s = 0; s < BAENC_ROUNDS; s++) {
       if((n & 0x01) == 0) nibble = k >> 4;
       else nibble = k & 0x0f;
-      c = (c << 4) | (nibble ^ (((c & 0x0f) + n) & 0x0f) ^ (c >> 4));
+      c = (c << 4) | (nibble ^ ((c + n) & 0x0f) ^ (c >> 4));
       n++;
       if(n >= BAENC_NIBBLECOUNT) n = 0;
       k = key[n / 2];
@@ -40,7 +40,7 @@ __attribute__ ((noinline)) void BAEncB(const uint8_t *src, int size, const uint8
     for(s = 0; s < BAENC_ROUNDS; s++) {
       if((n & 0x01) == 0) nibble = k >> 4;
       else nibble = k & 0x0f;
-      c = (c << 4) | (nibble ^ (((c & 0x0f) + n) & 0x0f) ^ (c >> 4));
+      c = (c << 4) | (nibble ^ ((c + n) & 0x0f) ^ (c >> 4));
       n--;
       if(n < 0) n = BAENC_NIBBLECOUNT - 1;
       k = key[n / 2];
