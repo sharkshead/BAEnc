@@ -37,7 +37,7 @@ environment with other hackers and you don't want them simply snooping your mess
 for which you'll need a more secure method of storing or transmitting keys.
 
 This has been developed using g++ and the Arduino IDE, which is why the source is in a BAEnc.cpp file. There is, however,
-no C++ code here. If you're in a C environment then simple change the file name to BAEnc.c and carry on as usual.
+no C++ code here. If you're in a C environment then simply change the file name to BAEnc.c and carry on as usual.
 
 The Makefile at the top of the repository is for a Raspberry Pi running Linux.
 Two examples are included that use the BAEnc library, one for a Pi and one the an Arduino. Both do the same job and have the same output -
