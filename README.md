@@ -26,7 +26,7 @@ If you are using this library because of its small footprint, then I'd suggest y
 and "B" on the largest or the one collecting all the data from your satellite micros. This is because "A" is slightly smaller and faster than "B".
 You can, however, use them in whatever configuration suits your needs.
 
-The number of (Feistel) rounds and the key length are customisable in the BAEnc.h file. Defaults are 7 rounds and a key length of 32 nibbles (16 byte.)
+The number of (Feistel) rounds and the key length are customisable in the BAEnc.h file. Defaults are 7 rounds and a key length of 32 nibbles (16 bytes.)
 
 Both "A" and "B" can encrypt and decrypt in-situ, meaning you don't need to allocate a separate chunk of memory to hold the encrypted/decrypted message.
 They can produce their output in a separate buffer if you so desire, its just that this choice is not forced on you.
