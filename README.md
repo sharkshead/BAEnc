@@ -40,7 +40,7 @@ This has been developed using g++ and the Arduino IDE, which is why the source i
 no C++ code here. If you're in a C environment then simply change the file name to BAEnc.c and carry on as usual.
 
 The Makefile at the top of the repository is for a Raspberry Pi running Linux.
-Two examples are included that use the BAEnc library, one for a Pi and one the an Arduino. Both do the same job and have the same output -
+Two examples are included that use the BAEnc library, one for a Pi and one for an Arduino. Both do the same job and have the same output -
 they allocate a random message and random key, then pass this through "A" then "B" and then "B" then "A", so you can see that the original
 message is restored after each function has been used, and then it performs a speed test usng the same random message and key, reporing the
 time in nanoseconds to encrypt a single byte.
