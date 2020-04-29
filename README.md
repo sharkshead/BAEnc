@@ -15,7 +15,7 @@ Make no mistake, BAEnc is not in the same league as AES and co. when it comes to
 
 It is designed to be small, fast, and hard for a casual eaves-dropper to break.
 
-You can think of BAEnc's security as being somewhere between a simple shared-key XOR entryption and the AES's of the world.
+You can think of BAEnc's security as being somewhere between a simple shared-key XOR encryption and the AES's of the world.
 
 
 # Overview
